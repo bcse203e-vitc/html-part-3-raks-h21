@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Form Question 5</title>
+</head>
+<body>
+
+  <h2>Travel Booking Form</h2>
+
+  <form action="/submit-booking" method="post">
+
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="contact">Email or Phone:</label><br>
+    <input type="text" id="contact" name="contact" required><br><br>
+
+    <label for="destination">Destination:</label><br>
+    <select name="destination" id="destination" required>
+      <option value="">--Select--</option>
+      <option value="paris">Paris</option>
+      <option value="tokyo">Tokyo</option>
+      <option value="newyork">New York</option>
+      <option value="sydney">Sydney</option>
+    </select><br><br>
+
+    <label for="traveldate">Travel Date:</label><br>
+    <input type="date" id="traveldate" name="traveldate" required><br><br>
+
+    <label for="travelers">Number of Travelers:</label><br>
+    <input type="number" id="travelers" name="travelers" min="1" required><br><br>
+
+    <label>Travel Class:</label><br>
+    <input type="radio" name="class" value="economy" required> Economy<br>
+    <input type="radio" name="class" value="business"> Business<br>
+    <input type="radio" name="class" value="first"> First Class<br><br>
+
+    <input type="checkbox" name="insurance" value="yes"> Opt for Travel Insurance<br><br>
+
+    <label for="totalcost">Estimated Total Cost (₹):</label><br>
+    <input type="text" id="totalcost" name="totalcost" placeholder="e.g., 25000"><br><br>
+
+    <button type="submit">Book Now</button>
+
+  </form>
+
+</body>
+</html>
